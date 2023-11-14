@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+#container{
+    width: 100%;
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+
+}
+#vd{
+    position: absolute;
+    width: 100%;
+    filter: brightness(50%);
+}
+#navbar{
+    width: 100%;height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+#logo{
+    width: 100px;
+    position: absolute;
+    left: 10px;
+    top: 0px;
+}
+h4{
+    font-size: 20px;
+    color:white;
+    text-shadow: 2px 2px black ;
+    letter-spacing: 4px;
+    cursor: pointer;
+    font-family: 'Poltawski Nowy', serif;
+}
+#a{
+    position: absolute;
+    left: 180px;
+}
+#b{
+    position: absolute;
+    left: 380px;
+}
+#c{
+    position: absolute;
+    left: 550px;
+}
+#d{
+   position: absolute;
+   right: 20px; 
+}
+#title{
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    position: absolute;
+    font-family: 'Kalam', cursive;
+    letter-spacing: 40px;
+    font-size: 90px;
+    animation-name: movetext;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: 1;
+    bottom: 100px;
+}
+@keyframes movetext{
+    from{
+        transform: translateX(-200px);
+        filter: opacity(0);
+    }
+    to{
+        transform: translateX(0px);
+        filter: opacity(1);
+    }
+}
+
+#sectionone{
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    position: relative;
+    top: 60vh;
+
+}
+#firstshoe{
+    width: 30%;
+    position: absolute;
+    bottom: -80px;
+    left: 6%;
+    transform: rotateY(180deg);
+    filter: drop-shadow(5px 5px 5px white);
+    animation-name: shoemove;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 4;
+}
+@keyframes shoemove{
+   0%,100%{
+     transform: rotate(0deg) rotateY(180deg);
+   }
+   10%{
+    transform: rotate(30deg) rotateY(180deg);
+   }
+   20%{
+    transform: rotate(45deg) rotateY(180deg);
+
+   }
+   30%{
+    transform: rotate(30degdeg) rotateY(180deg);
+    
+   }
+   40%{
+    transform: rotate(45deg) rotateY(180deg);
+   }
+   50%{
+    transform: rotate(30deg) rotateY(180deg);
+   }
+}
+#firstshoe:hover{
+    animation-name: shoemove2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+@keyframes shoemove2{
+    0%,100%{
+      transform: rotate(0deg) rotateY(180deg) scale(1.2);
+    }
+    10%{
+     transform: rotate(30deg) rotateY(180deg) scale(1.2);
+    }
+    20%{
+     transform: rotate(45deg) rotateY(180deg) scale(1.2);
+ 
+    }
+    30%{
+     transform: rotate(30degdeg) rotateY(180deg) scale(1.2);
+     
+    }
+    40%{
+     transform: rotate(45deg) rotateY(180deg) scale(1.2);
+    }
+    50%{
+     transform: rotate(30deg) rotateY(180deg) scale(1.2);
+    }
+ }
+
+ #shoename{
+    position: absolute;
+    right: 30%;
+    top: 5%;
+    color: darkcyan;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+ }
+ #dis{
+    position: absolute;
+    font-size: 20px;
+    left: 40%;
+    right: 20%;
+    top: 30%;
+    color: darkgray;
+ }
+ #price{
+    position: absolute;
+    top: 70%;
+    right: 30%;
+    color: greenyellow;
+    letter-spacing: 10px;
+ }
+ #button{
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    color: wheat;
+    background-color: rgb(233, 95, 95);
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    box-shadow: 5px 5px 5px white;
+    cursor: pointer;
+ }
+
+ #sectiontwo{
+    width: 100%;
+    height: 40vh;
+    background-color: gray;
+    position: relative;
+    top: 60vh;
+ }
+ #secoundshoe{
+    width: 30%;
+    position: absolute;
+    bottom: -80px;
+    left: 6%;
+    filter: drop-shadow(5px 5px 5px white);
+    z-index: 4;
+    left: 65%;
+    animation-name: shoemove3;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+ }
+ @keyframes shoemove3{
+    0%,100%{
+      transform: rotate(0deg) ;
+    }
+    10%{
+     transform: rotate(-30deg) ;
+    }
+    20%{
+     transform: rotate(-45deg) ;
+ 
+    }
+    30%{
+     transform: rotate(-30deg) ;
+     
+    }
+    40%{
+     transform: rotate(-45deg);
+    }
+    50%{
+     transform: rotate(-30deg) ;
+    }
+ }
+ #shoenameleft{
+    position: absolute;
+    left: 30%;
+    top: 5%;
+    color: darkcyan;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px black;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+ }
+ #disleft{
+    position: absolute;
+    font-size: 20px;
+    right: 40%;
+    left: 20%;
+    top: 30%;
+    color: black;
+ }
+ #priceleft{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    color: greenyellow;
+    letter-spacing: 10px;
+ }
+ #buttonleft{
+    width: 200px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    color: wheat;
+    background-color: rgb(233, 95, 95);
+    position: absolute;
+    left: 5%;
+    top: 40%;
+    box-shadow: 5px 5px 5px white;
+    cursor: pointer;
+ }
+ #firstshoethree{
+    width: 30%;
+    position: absolute;
+    bottom: -80px;
+    left: 6%;
+    filter: drop-shadow(5px 5px 5px white);
+    animation-name: shoemove4;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    z-index: 4;
+ }
+ @keyframes shoemove4{
+    0%,100%{
+      transform: rotate(0deg) ;
+    }
+    10%{
+     transform: rotate(30deg) ;
+    }
+    20%{
+     transform: rotate(45deg) ;
+ 
+    }
+    30%{
+     transform: rotate(30deg) ;
+     
+    }
+    40%{
+     transform: rotate(45deg);
+    }
+    50%{
+     transform: rotate(30deg) ;
+    }
+ }
+ 

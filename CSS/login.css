@@ -1,0 +1,57 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+#logcontainer{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(75deg,rgb(24, 24, 24),rgb(218, 10, 10));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    background-size: 400%;
+    background-position: 400%;
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes colorchange
+ {
+     0%{
+        background-position:0% 50% ;
+     } 
+     50%{
+        background-position: 100% 0% ;
+     } 
+     100%{
+        background-position: 50% 100% ;
+     } 
+}
+#loginpage{
+    width: 450px;
+    height: 300px;
+    background-image: linear-gradient(80deg,rgb(0, 0, 0),rgb(236, 96, 96));
+    background-size: 400%;
+    background-position: 400%;
+    animation-name: colorchange;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    border-radius: 100%;
+    box-shadow: 5px 5px 5px black;
+    border: rgb(251, 251, 251);
+    font-size:  19px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: rgb(253, 253, 253);
+    text-shadow: 2px 2px 5px black;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+#loginpage:hover{
+    transform: scale(1.2);
+}
